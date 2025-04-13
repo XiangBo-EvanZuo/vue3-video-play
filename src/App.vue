@@ -38,9 +38,9 @@ const options = reactive({
   volume: 0.3, //默认音量大小
   control: true, //是否显示控制器
   title: "", //视频名称
-  type: "video/mp4",
-  // src: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8", //视频源
-  src: "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4", //视频源
+  type: "m3u8",
+  src: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8", //视频源
+  // src: "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4", //视频源
   // src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8", //视频源
   poster: "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg", //封面
   controlBtns: [
