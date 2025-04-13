@@ -94,7 +94,7 @@
       ref="refPlayerControl"
       v-if="!isMobile && state.control"
     >
-      <div class="d-control-progress">
+      <div v-if="showBottomControl" class="d-control-progress">
         <d-slider
           class="d-progress-bar"
           @onMousemove="onProgressMove"
@@ -106,7 +106,7 @@
         ></d-slider>
       </div>
 
-      <div class="d-control-tool" @click="inputFocusHandle">
+      <div v-if="showBottomControl" class="d-control-tool" @click="inputFocusHandle">
         <div class="d-tool-bar">
           <div class="d-tool-item" @click="togglePlay">
             <d-icon size="24" :icon="`icon-${state.playBtnState}`"></d-icon>
@@ -279,6 +279,7 @@ import {
   isMobile,
   firstUpperCase,
 } from "../utils/util";
+import { computed } from "vue";
 const Hls = new Hls2({ fragLoadingTimeOut: 2000 });
 import { videoEmits, defineProps } from "./plugins/index";
 const props = defineProps(defineProps); //props
@@ -316,6 +317,8 @@ const state = reactive({
   qualityLevels: [], //分辨率数组
   currentLevel: 0, //首选分辨率
 });
+
+const showBottomControl = computed(() => state.playProgress)
 const compose =
   (...args) =>
   (value) =>
@@ -500,8 +503,17 @@ const mutedHandler = () => {
 
 //进度条事件
 const progressBarChange = (ev: Event, val) => {
+  console.log({val})
   let duration = state.dVideo.duration || state.dVideo.target.duration; // 媒体总长
   state.dVideo.currentTime = duration * val;
+  if (state.playBtnState == "play") {
+    state.dVideo.play();
+    state.playBtnState = "pause";
+  }
+};
+// 自定义位置播放
+const progressBarPosition = (time) => {
+  state.dVideo.currentTime = time;
   if (state.playBtnState == "play") {
     state.dVideo.play();
     state.playBtnState = "pause";
@@ -617,6 +629,7 @@ defineExpose({
   play: playHandle, //播放
   pause: pauseHandle, //暂停
   togglePlay, //暂停或播放
+  progressBarPosition
 });
 </script>
 

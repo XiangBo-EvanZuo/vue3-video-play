@@ -24,7 +24,8 @@ export const timeFormat = (time) => {
     return `${hh}:${mm}:${ss}`;
 }
 // 是否是移动端
-export const isMobile = !!("ontouchstart" in window)
+// export const isMobile = !!("ontouchstart" in window)
+export const isMobile = false
 // 全屏模式
 export const toggleFullScreen = (el) => {
     //如果当前是全屏状态，就退出全屏，否则进入全屏状态

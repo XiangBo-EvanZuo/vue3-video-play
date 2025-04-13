@@ -29,7 +29,7 @@ import { reactive, ref, nextTick } from "vue";
 import { videoPlay } from "../lib/index.js";
 
 const options = reactive({
-  width: "800px",
+  width: "100%",
   height: "450px",
   color: "#409eff",
   muted: false, //静音
