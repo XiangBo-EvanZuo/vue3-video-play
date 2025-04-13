@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-20 19:10:57
- * @LastEditors: itab.link
- * @LastEditTime: 2023-11-09 15:38:31
- * @Description: file content
-*/
 <template>
   <!-- <div style="height:150px; margin-top:100px">
     <d-slider v-model="options.volume"></d-slider>

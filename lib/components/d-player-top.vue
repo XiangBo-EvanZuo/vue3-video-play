@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-19 16:59:13
- * @LastEditors: web.王晓冬
- * @LastEditTime: 2021-08-28 07:14:57
- * @Description: file content
-*/
 <template>
     <div class="d-player-top">
         <p class="top-title">{{ title || '' }}</p>

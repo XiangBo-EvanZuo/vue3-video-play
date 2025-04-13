@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-20 09:34:45
- * @LastEditors: web.王晓冬
- * @LastEditTime: 2021-08-28 07:15:07
- * @Description: file content
-*/
 <template>
     <div class="d-switch" :class="{ 'is-checked': checked }">
         <input

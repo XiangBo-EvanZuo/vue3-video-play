@@ -1,11 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-19 12:50:35
- * @LastEditors: web.王晓冬
- * @LastEditTime: 2021-08-26 09:50:44
- * @Description: file content
- */
-
 // hex转rgb
 export const hexToRgba = (hex) => {
     return `${parseInt("0x" + hex.slice(1, 3))},${parseInt(

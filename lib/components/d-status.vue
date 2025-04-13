@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-20 13:52:52
- * @LastEditors: itab.link
- * @LastEditTime: 2023-11-09 15:28:50
- * @Description: file content
-*/
 <template>
     <div class="d-status" v-show="state.handleType || state.isMultiplesPlay">
         <li class="d-flex-center" v-show="state.handleType == 'volume'">

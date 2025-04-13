@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2020-10-27 10:31:35
- * @LastEditors: web.王晓冬
- * @LastEditTime: 2021-08-28 07:14:47
- * @Description: file content
-*/
 <template>
   <!-- <svg class="d-icon" :style="iconSize" aria-hidden="true">
     <use :xlink:href="`#${icon}`" />

@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-26 12:13:47
- * @LastEditors: itab.link
- * @LastEditTime: 2023-11-09 14:44:07
- * @Description: file content
-*/
 <template>
   <div>
     <transition name="d-fade-in">

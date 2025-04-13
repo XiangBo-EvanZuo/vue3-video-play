@@ -1,10 +1,3 @@
-/*
- * @Author: web.王晓冬
- * @Date: 2021-08-19 10:25:40
- * @LastEditors: itab.link
- * @LastEditTime: 2023-11-09 15:27:03
- * @Description: file content
- */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
